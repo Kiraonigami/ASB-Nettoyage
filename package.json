@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview --port 3000",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "prepare": "husky install",
-    "test": "vitest"
+    "test": "vitest",
+    "postbuild": "react-snap"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -15,7 +16,8 @@
     "lucide-react": "^0.525.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-google-recaptcha": "^3.1.0"
+    "react-google-recaptcha": "^3.1.0",
+    "react-snap": "^1.23.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.3",
@@ -42,5 +44,12 @@
     "typescript": "^4.9.5",
     "vite": "^4.1.1",
     "vitest": "^0.32.2"
+  },
+
+  "reactSnap": {
+  "inlineCss": true,
+  "puppeteerArgs": ["--no-sandbox"],
+  "publicPath": "public/seo",
+  "source": "dist"
   }
 }
