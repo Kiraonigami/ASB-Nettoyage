@@ -48,7 +48,7 @@ function Contact() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-6 h-6 text-blue-600" />
-                contact@cleaningservice.com
+                nanamedu75@gmail.com
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="w-6 h-6 text-blue-600" />
@@ -58,11 +58,7 @@ function Contact() {
           </div>
 
           {/* Bloc droit - Formulaire */}
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="space-y-6"
-          >
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
             <input
               type="text"
               name="from_name"
@@ -115,7 +111,9 @@ function Contact() {
             </button>
 
             {status === 'success' && (
-              <p className="text-green-600 text-center mt-4">Message envoyé !</p>
+              <p className="text-green-600 text-center mt-4">
+                Message envoyé !
+              </p>
             )}
             {status === 'error' && (
               <p className="text-red-600 text-center mt-4">

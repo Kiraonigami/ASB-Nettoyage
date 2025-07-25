@@ -7,8 +7,8 @@ function Footer() {
           <div>
             <h4 className="text-xl font-semibold mb-4">À Propos</h4>
             <p className="text-gray-400">
-              ASB Nettoyage propose des services de propreté pour particuliers et
-              professionnels à Paris et en Île-de-France.
+              ASB Nettoyage propose des services de propreté pour particuliers
+              et professionnels à Paris et en Île-de-France.
             </p>
           </div>
 
@@ -16,8 +16,16 @@ function Footer() {
           <div>
             <h4 className="text-xl font-semibold mb-4">Liens Rapides</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#services" className="hover:text-white">Nos Services</a></li>
-              <li><a href="#contact" className="hover:text-white">Contact</a></li>
+              <li>
+                <a href="#services" className="hover:text-white">
+                  Nos Services
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-white">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -26,7 +34,7 @@ function Footer() {
             <h4 className="text-xl font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
               <li>Téléphone : +33 6 10 24 00 30</li>
-              <li>Email : contact@asb-nettoyage.com</li>
+              <li>Email : nanamedu75@gmail.com</li>
               <li>Adresse : 18 Rue Saint Saëns, Paris</li>
             </ul>
           </div>
