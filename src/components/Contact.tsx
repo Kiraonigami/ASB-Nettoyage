@@ -62,7 +62,7 @@ function Contact() {
             <input
               type="text"
               name="from_name"
-              placeholder="Nom"
+              placeholder="Nom-Prénom"
               required
               className="w-full p-3 border rounded"
             />
