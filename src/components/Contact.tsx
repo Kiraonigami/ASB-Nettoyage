@@ -11,14 +11,16 @@ function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setSending(true)
     setStatus('idle')
 
+    // Vérifie si le captcha est rempli
     if (!captchaToken) {
       setStatus('error')
+      setSending(false)
+      alert("Veuillez d'abord remplir le reCAPTCHA.")
       return
     }
-
-    setSending(true)
 
     try {
       await emailjs.sendForm(
