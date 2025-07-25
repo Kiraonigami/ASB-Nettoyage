@@ -98,7 +98,7 @@ function Contact() {
             />
             <div className="flex justify-center">
               <ReCAPTCHA
-                sitekey="YOUR_RECAPTCHA_SITE_KEY"
+                sitekey="6Lcf2I4rAAAAAKDPrI_DZAtx0fO2Ogss2iTA0Qxn"
                 onChange={(token) => setCaptchaToken(token)}
               />
             </div>
