@@ -11,8 +11,14 @@ function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSending(true)
     setStatus('idle')
+
+    if (!captchaToken) {
+      setStatus('error')
+      return
+    }
+
+    setSending(true)
 
     try {
       await emailjs.sendForm(
